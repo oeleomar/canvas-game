@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Shotter Game</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/canvas.css">
 </head>
 <body>
-    <canvas id="canvas-game" class="canvas-game"></canvas>
-    <script src="./game.js"></script>
+    <main>
+        <div class="span-div"><span>Score: </span><span id="scoreEL">0</span></div>
+        <div class="startgame" id="modolEL">
+            <div class="startgame2">
+                <h1 id="final-score">0</h1>
+                <p>Pontos</p>
+                <button class="button-game" id="button-game">Start Game</button>
+            </div>
+        </div>
+        <canvas id="canvas-game" class="canvas-game"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./game.js"></script>
+    </main>
 </body>
 </html>

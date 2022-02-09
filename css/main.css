@@ -1,0 +1,89 @@
+main{
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+div.span-div{
+    color: white;
+    position: fixed;
+    margin: 5px;
+    font-family: inherit;
+    user-select: none;
+}
+
+div.startgame {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.startgame2{
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 22pt;
+    margin: 10px;
+}
+p{
+    margin: 10px;
+}
+
+button{
+    background-color: rgb(40, 40, 204);
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+    font-family: inherit;
+    width: 80%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.651);
+}
+
+.button-game {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    cursor: pointer;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(200%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100% {
+        transform: scale(1.1);
+        filter: brightness(200%);
+    }
+}
+
+@media (max-width: 858px){
+    bottom{
+        padding: 10px;
+    }
+    div.startgame2{
+        width: 50%;
+    }
+}
